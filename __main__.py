@@ -34,6 +34,7 @@ root.overrideredirect(True)
 root.geometry(geometry)
 root.configure(bg="pink")
 root.wm_attributes("-transparentcolor", "pink")
+root.wm_attributes("-alpha", 0.3)   # <<< semi-transparent outline
 root.wm_attributes("-topmost", True)
 
 root.update_idletasks()
