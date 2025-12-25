@@ -174,6 +174,18 @@ def save_bounds(event=None):
 def close_window(event=None):
     root.destroy()
 
+# ---------------- Toggle window visibility ----------------
+window_hidden = False
+
+def toggle_window_visibility(event=None):
+    """Toggle window hide/show"""
+    global window_hidden
+    window_hidden = not window_hidden
+    if window_hidden:
+        root.withdraw()  # Hide window
+    else:
+        root.deiconify()  # Show window
+
 # root.bind_all("<Alt-x>", close_window)
 # root.bind_all("<Alt-X>", close_window)
 
@@ -183,6 +195,7 @@ def start():
     keyboard.add_hotkey("alt+o", toggle_resize)
     keyboard.add_hotkey("alt+k", save_bounds)
     keyboard.add_hotkey("alt+m", close_window)
+    keyboard.add_hotkey("alt+h", toggle_window_visibility)  # Toggle hide/show
     root.mainloop()
 
 start()
