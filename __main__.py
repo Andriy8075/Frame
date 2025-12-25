@@ -180,9 +180,9 @@ def close_window(event=None):
 
 # ---------------- Start ----------------
 def start():
-    keyboard.add_hotkey("alt+w", toggle_resize)
-    keyboard.add_hotkey("alt+s", save_bounds)
-    keyboard.add_hotkey("alt+x", close_window)
+    keyboard.add_hotkey("alt+o", toggle_resize)
+    keyboard.add_hotkey("alt+l", save_bounds)
+    keyboard.add_hotkey("alt+m", close_window)
     root.mainloop()
 
 start()
