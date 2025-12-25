@@ -57,7 +57,7 @@ set_clickthrough(True)
 canvas = tk.Canvas(root, bg="pink", highlightthickness=0)
 canvas.pack(fill="both", expand=True)
 
-BORDER = 8
+BORDER = 2
 MIN_W, MIN_H = 120, 80
 
 def redraw_border():
